@@ -242,8 +242,11 @@
               I’ll respond with a clear recommendation and a quote.
             </p>
 
-            <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/?sent=1#contact">
-              <input type="hidden" name="form-name" value="contact" />
+        <form class="contact-form" id="contactForm" name="contact" method="POST"
+            netlify data-netlify="true" data-netlify-honeypot="bot-field"
+            enctype="application/x-www-form-urlencoded"
+            action="/thanks.html">          
+        <input type="hidden" name="form-name" value="contact" />
 
               <p class="honeypot">
                 <label>
