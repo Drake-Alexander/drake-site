@@ -431,3 +431,8 @@ h1{
 @media (max-width: 900px){
   .form-grid{ grid-template-columns: 1fr; }
 }
+/* Disabled CTA (used for placeholder Stripe button) */
+a[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.6;
+}
