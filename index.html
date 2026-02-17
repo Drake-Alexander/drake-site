@@ -6,15 +6,17 @@
   <title>Drake Alexander | Websites & Automation</title>
   <meta name="description" content="Websites and Google Sheets automation for local small businesses in Oklahoma City. Clean, professional, and straightforward." />
   <link rel="stylesheet" href="styles.css" />
-<meta property="og:title" content="Drake's Website Design | Websites & Automation" />
-<meta property="og:description" content="Clean websites and practical Google Sheets automation for local small businesses in Edmond and Oklahoma City." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://drakeswebsitedesign.com/" />
-<meta property="og:image" content="https://drakeswebsitedesign.com/preview.jpg" />
+
+  <meta property="og:title" content="Drake's Website Design | Websites & Automation" />
+  <meta property="og:description" content="Clean websites and practical Google Sheets automation for local small businesses in Edmond and Oklahoma City." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drakeswebsitedesign.com/" />
+  <meta property="og:image" content="https://drakeswebsitedesign.com/preview.jpg" />
+
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
 </head>
 <body>
 
@@ -135,59 +137,59 @@
       </div>
     </section>
 
-    <!-- WORK -->
-   <!-- PROJECT TYPES (replaces Work) -->
+    <!-- PROJECT TYPES -->
     <section class="section alt" id="work">
-    <div class="container">
+      <div class="container">
         <div class="section-head">
-        <h2>Common projects</h2>
-        <p>Simple, high-impact work that helps local service businesses look professional and run smoother.</p>
+          <h2>Common projects</h2>
+          <p>Simple, high-impact work that helps local service businesses look professional and run smoother.</p>
         </div>
 
         <div class="grid-3">
-        <article class="work-card">
+          <article class="work-card">
             <div class="work-thumb">Website Build</div>
             <h3>New business website</h3>
             <p class="muted">A clean site with services, photos, and a contact flow that makes it easy to reach you.</p>
             <ul class="bullets">
-            <li>Home + Services + About + Contact</li>
-            <li>Mobile-first design</li>
-            <li>Basic SEO setup</li>
+              <li>Home + Services + About + Contact</li>
+              <li>Mobile-first design</li>
+              <li>Basic SEO setup</li>
             </ul>
-        </article>
+          </article>
 
-        <article class="work-card">
+          <article class="work-card">
             <div class="work-thumb">Website Refresh</div>
             <h3>Redesign / cleanup</h3>
             <p class="muted">Modernize an older site, tighten the messaging, improve layout, and make it feel current.</p>
             <ul class="bullets">
-            <li>Better structure + readability</li>
-            <li>Speed + mobile improvements</li>
-            <li>Clear calls-to-action</li>
+              <li>Better structure + readability</li>
+              <li>Speed + mobile improvements</li>
+              <li>Clear calls-to-action</li>
             </ul>
-        </article>
+          </article>
 
-        <article class="work-card">
+          <article class="work-card">
             <div class="work-thumb">Automation</div>
             <h3>Sheets + workflow automation</h3>
             <p class="muted">Dashboards and automations that reduce manual steps and keep work consistent.</p>
             <ul class="bullets">
-            <li>Dashboards & reporting</li>
-            <li>Forms → Sheets → email/PDF</li>
-            <li>Data cleanup & standardization</li>
+              <li>Dashboards & reporting</li>
+              <li>Forms → Sheets → email/PDF</li>
+              <li>Data cleanup & standardization</li>
             </ul>
-        </article>
+          </article>
         </div>
 
         <div class="card" style="margin-top:18px;">
-        <h3 style="margin:0 0 8px;">No portfolio (yet) — here’s what I do instead</h3>
-        <p class="muted" style="margin:0;">
+          <h3 style="margin:0 0 8px;">No portfolio (yet) — here’s what I do instead</h3>
+          <p class="muted" style="margin:0;">
             I’ll show you a simple plan before you pay anything: page layout, the exact sections we’ll build,
             and a clear scope. If you want, we can meet in person in the Edmond/OKC area to go over it.
-        </p>
+          </p>
         </div>
-    </div>
+      </div>
     </section>
+
     <!-- PROCESS -->
     <section class="section" id="process">
       <div class="container">
@@ -240,56 +242,64 @@
               I’ll respond with a clear recommendation and a quote.
             </p>
 
-            <form class="contact-form" id="contactForm">
-  <div class="form-grid">
-    <label>
-      <span>Name</span>
-      <input type="text" name="name" autocomplete="name" required />
-    </label>
+            <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1#contact">
+              <input type="hidden" name="form-name" value="contact" />
 
-    <label>
-      <span>Business</span>
-      <input type="text" name="business" autocomplete="organization" />
-    </label>
+              <p class="honeypot">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
 
-    <label>
-      <span>Email</span>
-      <input type="email" name="email" autocomplete="email" required />
-    </label>
+              <div class="form-grid">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
 
-    <label>
-      <span>Phone (optional)</span>
-      <input type="tel" name="phone" autocomplete="tel" />
-    </label>
+                <label>
+                  <span>Business</span>
+                  <input type="text" name="business" autocomplete="organization" />
+                </label>
 
-    <label class="full">
-      <span>What do you need help with?</span>
-      <select name="service" required>
-        <option value="">Select one…</option>
-        <option value="Website">Website</option>
-        <option value="Google Sheets / Automation">Google Sheets / Automation</option>
-        <option value="Both">Both</option>
-        <option value="Not sure">Not sure</option>
-      </select>
-    </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
 
-    <label class="full">
-      <span>Message</span>
-      <textarea name="message" rows="6" required placeholder="A quick summary is perfect: what you do, what you want to improve, and any deadline."></textarea>
-    </label>
-  </div>
+                <label>
+                  <span>Phone (optional)</span>
+                  <input type="tel" name="phone" autocomplete="tel" />
+                </label>
 
-  <div class="form-actions">
-    <button class="btn primary" type="submit">Send message</button>
-    <p class="fineprint" id="formStatus">This opens your email app with the message filled in. If it doesn’t, you can email or text me directly below.</p>
-  </div>
-</form>
+                <label class="full">
+                  <span>What do you need help with?</span>
+                  <select name="service" required>
+                    <option value="">Select one…</option>
+                    <option value="Website">Website</option>
+                    <option value="Google Sheets / Automation">Google Sheets / Automation</option>
+                    <option value="Both">Both</option>
+                    <option value="Not sure">Not sure</option>
+                  </select>
+                </label>
 
-<div class="contact-lines" style="margin-top:14px;">
-  <p><strong>Email:</strong> <a href="mailto:drakealexander9345@gmail.com">drakealexander9345@gmail.com</a></p>
-  <p><strong>Phone/Text:</strong> <a href="tel:+14055490840">(405) 549-0840</a></p>
-  <p class="muted small">Based in Edmond, Oklahoma. Happy to meet in person.</p>
-</div>
+                <label class="full">
+                  <span>Message</span>
+                  <textarea name="message" rows="6" required placeholder="A quick summary is perfect: what you do, what you want to improve, and any deadline."></textarea>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" type="submit">Send message</button>
+                <p class="fineprint" id="formStatus">I’ll respond within 1 business day. If you prefer, you can email or text me directly below.</p>
+              </div>
+            </form>
+
+            <div class="contact-lines" style="margin-top:14px;">
+              <p><strong>Email:</strong> <a href="mailto:drakealexander9345@gmail.com">drakealexander9345@gmail.com</a></p>
+              <p><strong>Phone/Text:</strong> <a href="tel:+14055490840">(405) 549-0840</a></p>
+              <p class="muted small">Based in Edmond, Oklahoma. Happy to meet in person.</p>
+            </div>
           </div>
 
           <div class="note">
@@ -308,7 +318,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-        <p>© <span id="year"></span> Drake Alexander • Edmond, Oklahoma</p>
+      <p>© <span id="year"></span> Drake Alexander • Edmond, Oklahoma</p>
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -318,53 +328,15 @@
   </footer>
 
   <script>
-  // Footer year
-  document.getElementById("year").textContent = new Date().getFullYear();
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Simple contact form: opens the user's mail app with a pre-filled message.
-  // (No backend needed for now.)
-  const contactForm = document.getElementById("contactForm");
-  const formStatus = document.getElementById("formStatus");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const data = new FormData(contactForm);
-      const name = (data.get("name") || "").toString().trim();
-      const business = (data.get("business") || "").toString().trim();
-      const email = (data.get("email") || "").toString().trim();
-      const phone = (data.get("phone") || "").toString().trim();
-      const service = (data.get("service") || "").toString().trim();
-      const message = (data.get("message") || "").toString().trim();
-
-      const subject = `Website / Automation inquiry — ${name}${business ? " (" + business + ")" : ""}`;
-
-      const bodyLines = [
-        `Name: ${name}`,
-        business ? `Business: ${business}` : null,
-        `Email: ${email}`,
-        phone ? `Phone: ${phone}` : null,
-        `Interested in: ${service}`,
-        "",
-        "Message:",
-        message,
-        "",
-        "—",
-        "Sent from drakealexander site"
-      ].filter(Boolean);
-
-      const mailto = `mailto:drakealexander9345@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-
-      // Best-effort: open mail client
-      window.location.href = mailto;
-
-      if (formStatus) {
-        formStatus.textContent = "If your email app didn’t open, copy your message and email/text me directly below.";
-      }
-    });
-  }
-</script>
+    // Show a simple success message after Netlify Forms redirect
+    const formStatus = document.getElementById("formStatus");
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1" && formStatus) {
+      formStatus.textContent = "Message sent — I’ll get back to you shortly.";
+    }
+  </script>
 </body>
 </html>
-
