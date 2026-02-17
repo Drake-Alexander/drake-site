@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Drake Alexander</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Drake Alexander</span>
+        <span class="brand-tag">Websites • Sheets • Automation</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Projects</a>
+        <a href="index.html#process">Process</a>
+        <a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Privacy Policy</h2>
+        <p class="muted">Last updated: <span id="d"></span></p>
+      </div>
+
+      <div class="card">
+        <p class="muted">
+          This website collects information you submit through the contact form or by contacting me directly.
+          I use it only to respond to your request and provide services.
+        </p>
+
+        <h3>What I collect</h3>
+        <ul class="bullets">
+          <li>Name, business name, email, phone (if provided)</li>
+          <li>Message details you submit</li>
+          <li>Basic analytics may be collected by the hosting provider (e.g., page views)</li>
+        </ul>
+
+        <h3>How I use it</h3>
+        <ul class="bullets">
+          <li>To respond to your inquiry</li>
+          <li>To provide quotes, timelines, and project communication</li>
+          <li>To deliver and support services you request</li>
+        </ul>
+
+        <h3>Sharing</h3>
+        <p class="muted">
+          I don’t sell your information. I only share it when needed to deliver services (for example, email delivery or payment processing).
+        </p>
+
+        <h3>Contact</h3>
+        <p class="muted">
+          Questions? Email <a href="mailto:drakealexander9345@gmail.com">drakealexander9345@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Drake Alexander • Edmond, Oklahoma</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="refunds.html">Refunds</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>

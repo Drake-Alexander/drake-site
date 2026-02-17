@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service | Drake Alexander</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Drake Alexander</span>
+        <span class="brand-tag">Websites • Sheets • Automation</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Projects</a>
+        <a href="index.html#process">Process</a>
+        <a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Terms of Service</h2>
+        <p class="muted">Last updated: <span id="d"></span></p>
+      </div>
+
+      <div class="card">
+        <p class="muted">
+          These terms cover basic expectations for freelance website and automation work. Specific project scope, pricing,
+          and timelines are defined in writing before work begins.
+        </p>
+
+        <h3>Scope</h3>
+        <p class="muted">
+          Work is based on the agreed scope. Requests outside scope may require a revised quote.
+        </p>
+
+        <h3>Client responsibilities</h3>
+        <ul class="bullets">
+          <li>Provide content, access, and approvals in a timely manner</li>
+          <li>Confirm accuracy of business information, hours, services, and images</li>
+        </ul>
+
+        <h3>Timelines</h3>
+        <p class="muted">
+          Timelines depend on responsiveness and scope. Typical timeframes are discussed before starting.
+        </p>
+
+        <h3>Payments</h3>
+        <p class="muted">
+          Projects may require a deposit to reserve build time. Remaining balance is due as agreed in writing.
+        </p>
+
+        <h3>Contact</h3>
+        <p class="muted">
+          Questions? Email <a href="mailto:drakealexander9345@gmail.com">drakealexander9345@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Drake Alexander • Edmond, Oklahoma</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="refunds.html">Refunds</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
